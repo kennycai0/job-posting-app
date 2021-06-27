@@ -1,0 +1,10 @@
+{% extends "menu/base.html" %}
+{% block title %}
+Resume List Page
+{% endblock %}
+
+{% block content %}
+{% for resume in resume_list %}
+<div>{{ resume.author }}: {{ resume.description }}</div>
+{% endfor %}
+{% endblock %}

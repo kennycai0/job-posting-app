@@ -1,0 +1,11 @@
+{% extends "menu/base.html" %}
+{% block title %}
+Menu Page
+{% endblock %}
+
+{% block content %}
+{% csrf_token %}
+<h2>Profile Page</h2><br>
+<a href="{% url 'vacancy-new' %}">Create Vacancy</a><br>
+<a href="{% url 'resume-new' %}">Create Resume</a><br>
+{% endblock %}

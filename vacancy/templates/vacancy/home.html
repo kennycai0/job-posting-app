@@ -1,0 +1,10 @@
+{% extends "menu/base.html" %}
+{% block title %}
+Vacancy List Page
+{% endblock %}
+
+{% block content %}
+{% for vacancy in vacancy_list %}
+<div>{{ vacancy.author }}: {{ vacancy.description }}</div>
+{% endfor %}
+{% endblock %}
